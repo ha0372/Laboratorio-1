@@ -5,8 +5,9 @@
 }
 
 <h2>Index</h2>
+<br />
 
-@using (Html.BeginForm("CalculoNotas", "Notas"))
+@using (Html.BeginForm("Resultado", "Notas"))
 {
     <label for="nombre"> Nombre del Estudiante </label>
     <br>
@@ -14,30 +15,30 @@
     <br>
     <label for="lab1"> Laboratorio 1 </label>
     <br>
-    <input type="number" name="lab1" required>
+    <input type="number" step="0.1" name="lab1" required>
     <br>
     <label for="lab2"> Laboratorio 2 </label>
     <br>
-    <input type="number" name="lab2" required>
+    <input type="number" step="0.1" name="lab2" required>
     <br>
     <label for="lab3"> Laboratorio 3 </label>
     <br>
-    <input type="number" name="lab3" required>
+    <input type="number" step="0.1" name="lab3" required>
     <br>
 
     <label for="par1"> Parcial 1 </label>
     <br>
-    <input type="number" name="par1" required>
+    <input type="number" step="0.1" name="par1" required>
     <br>
 
     <label for="par2"> Parcial 2 </label>
     <br>
-    <input type="number" name="par2" required>
+    <input type="number" step="0.1" name="par2" required>
     <br>
 
     <label for="par3"> Parcial 3 </label>
     <br>
-    <input type="number" name="par3" required>
+    <input type="number" step="0.1" name="par3" required>
     <br>
     <br />
     <input type="submit" class="btn-primary" />
